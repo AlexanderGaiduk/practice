@@ -1,0 +1,43 @@
+.form {
+    display: flex;
+    align-items: center;
+}
+
+.form .field {
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+.form .button {
+    position: absolute;
+    right: 0;
+    border: none;
+    outline: none;
+}
+
+.loading-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.loading {
+    border: 2px solid #f1f1f1;
+    border-top: 2px solid #46403f;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+.loading--small {
+    width: 30px;
+    height: 30px;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg)}
+}
