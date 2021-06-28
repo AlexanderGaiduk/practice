@@ -1,6 +1,7 @@
 .form {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .form .field {
@@ -14,6 +15,30 @@
     right: 0;
     border: none;
     outline: none;
+}
+
+.searchModePadding {
+    padding-bottom: 100px;
+}
+
+.navbar-brand {
+    cursor: pointer;
+}
+
+.hero-body {
+    position: relative;
+}
+
+.authorName {
+    color: #fff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.hero {
+    background-position: center center;
+    background-size:  cover
 }
 
 .loading-wrapper {
@@ -30,11 +55,6 @@
     width: 60px;
     height: 60px;
     animation: spin 1s linear infinite;
-}
-
-.loading--small {
-    width: 30px;
-    height: 30px;
 }
 
 @keyframes spin {

@@ -3,7 +3,7 @@ import {ThunkAction} from "redux-thunk";
 import {RootState} from "../index";
 import {GET_PHOTOS, PhotosAction, SET_ERROR} from "../types";
 
-const client = createClient("563492ad6f917000010000014640aabb4e9d420cbe1c0df7daf4c2bf")
+export const client = createClient("563492ad6f917000010000014640aabb4e9d420cbe1c0df7daf4c2bf")
 
 export const getPhotos = (page: number, searchQuery: string, onSuccess: () => void, onError: () => void): ThunkAction<void, RootState, null, PhotosAction> => {
     return async dispatch => {
@@ -65,13 +65,3 @@ export const setError = (err: string): PhotosAction => {
         payload: err
     }
 }
-
-
-
-// //////
-//
-// client.photos.random().then(
-//     result => {}
-// )
-
-
