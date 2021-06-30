@@ -184,7 +184,7 @@ const App: FC = () => {
                 ? <div className="notification is-danger mt-6 has-text-centered">{error}</div>
                 : <Fragment>
                     <h2 className="is-size-3 has-text-centered py-3">{title}</h2>
-                    {/*{mode === "search" && <div>Всего {total_results} результатов</div>}*/}
+                    {mode === "search" && <div>Всего: {total_results} фото</div>}
                     {photos.length > 0
                         ? <ResponsiveMasonry columnsCountBreakPoints={{500: 2, 1100: 3, 1900: 4}}>
                             <Masonry gutter={20}>
