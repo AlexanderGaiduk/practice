@@ -25,6 +25,20 @@
     cursor: pointer;
 }
 
+.ideasForSearch {
+    display: inline-block;
+    cursor:pointer;
+}
+
+.ideasForSearch + .ideasForSearch::before {
+    color: #fff;
+    content: ", ";
+}
+
+.ideasForSearch:hover {
+    color: #363636;
+}
+
 .hero-body {
     position: relative;
 }
@@ -60,4 +74,27 @@
 @keyframes spin {
     0% {transform: rotate(0deg)}
     100% {transform: rotate(360deg)}
+}
+
+
+.masonry-item {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 5px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /*color: #f1f1f1;*/
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.masonry-item:hover .overlay {
+    opacity: 1;
 }
